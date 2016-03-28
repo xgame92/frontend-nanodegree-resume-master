@@ -11,11 +11,10 @@ document.getElementById('education').style.display = "none";
 if (quiz == true){
   $("#header").prepend(skillStart);
 }else {
-  
+
 }
 
 var work = {
-
     "job" : [{
       "employer": "ali",
       "title": "alinin işi",
