@@ -25,7 +25,7 @@ var bio = {
         "email": "yigittanriverdi@yandex.com",
         "github": "xgame92",
         "twitter": "hloqer",
-        "location": "IZMIR"
+        "location": "izmir"
     },
     "welcomeMessage": "Hoşgeldin yiğit usta",
     "skills": [
@@ -116,11 +116,11 @@ function displayWork(){
 }
 displayWork();
 //  mouser click locationizer
-$(document).click(function (loc) {
-    var x = loc.pageX;
-    var y = loc.pageY;
-    logClicks(x,y);
-});
+// $(document).click(function (loc) {
+//     var x = loc.pageX;
+//     var y = loc.pageY;
+//     logClicks(x,y);
+// });
 
 $("#main").append(internationalizeButton);
 
@@ -129,6 +129,14 @@ function inName(name) {
     return name[0].charAt(0).toUpperCase() + name[0].slice(1) + " " + name[1].toUpperCase();
 }
 
+$("#mapDiv").append(googleMap);
+
+// var outsideExample = "First string";
+// if (true) {
+//     var outsideExample = "Second string";
+//     console.log(outsideExample);
+// }
+// console.log(outsideExample);
 
 //$("#header").append(skills);
 // var name = "Yiğit";
